@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+<div class="logo">
+    <h3>HelloEveryOne</h3>
+</div>
+<ul id="menulist">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Product</a></li>
+</ul>
+<div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+</div>
+    </nav>
+    <script>
+        let menu = document.getElementById("menulist");
+        menu.style.maxHeight="0px";
+function togglemenu() {
+    if(menu.style.maxHeight == "0px") {
+        menu.style.maxHeight = "200px";
+    } else {
+        menu.style.maxHeight = "0px";
+    }
+}
+    </script>
+    </body>
+</html>
